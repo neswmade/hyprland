@@ -21,7 +21,7 @@ return {
     -- workspace
     workspaceGaps = 18,
     windowGapsIn = 4,
-    wndowGapsOut = 18,
+    windowGapsOut = 18,
     singleWindowGapsOut = 24,
 
     -- window
