@@ -9,7 +9,7 @@ require("config.env")
 require("config.general")
 require("config.input")
 require("config.misc")
-require("config.decrations")
+require("config.decorations")
 require("config.gestures")
 require("config.keybinds")
 

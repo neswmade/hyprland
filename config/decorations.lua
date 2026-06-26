@@ -5,7 +5,7 @@ hl.config({
         rounding = vars.windowRounding,
 
         blur = {
-            enabed = vars.blurEnabled,
+            enabled = vars.blurEnabled,
             xray = vars.blurXray,
             special = vars.blurSpecialWs,
             ignore_opacity = true,
