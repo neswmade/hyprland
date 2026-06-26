@@ -4,7 +4,7 @@ hl.config({
     general = {
         layout = "master",
         allow_tearing = false,
-        gaps_workspace = vars.workspaceGaps,
+        gaps_workspaces = vars.workspaceGaps,
         gaps_in = vars.windowGapsIn,
         gaps_out = vars.windowGapsOut,
         border_size = vars.windowBorderSize,
@@ -13,7 +13,7 @@ hl.config({
     master = {
         new_status = "master",
         mfact = 0.50,
-        orienttion = "right",
+        orientation = "right",
         new_on_top = true,
     },
 })
