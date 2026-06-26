@@ -14,20 +14,20 @@ hl.config({
     },
 })
 
-hl.gestures({
+hl.gesture({
     fingers = vars.workspaceSwipeFingers,
     direction = "horizontal",
     action = "workspace"
 })
 
-hl.gestures({
+hl.gesture({
     fingers = vars.gestureFingers,
     direction = "up",
     action = "special",
     arg = "special"
 })
 
-hl.gestures({
+hl.gesture({
     fingers = vars.gestureFingersMore,
     direction = "down",
     action = function()
