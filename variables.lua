@@ -55,5 +55,5 @@ return {
 
     ---- apps
     kbTerminal = "SUPER + return",
-    kbBrowser = "Super + W"
+    kbBrowser = "SUPER + W"
 }
