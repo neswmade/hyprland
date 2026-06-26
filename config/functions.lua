@@ -1,3 +1,21 @@
+-- workspace actions
+local function ws_action(move, mode, index)
+    return function()
+        local active_ws = hl.get_active_workspace()
+        if active_ws then
+            local id = active_ws.id
+            local same_group = (index - 1) * 10 + (id % 10)
+            local same_slot = math.floor((id - 1) / 10) * 10 + index
+            local target = (mode == "g") and same_group or same_slot
+            if move then
+                return hl.dispatch(hl.dsp.window.move({ workspace = target }))
+            else
+                return hl.dispatch(hl.dsp.focus({ workspace = target }))
+            end
+        end
+    end
+end
+
 -- absolute resize
 local function resize_by_screen(width_pct, height_pct)
     local screen = hl.get_active_monitor()
@@ -67,5 +85,6 @@ return {
     resizer = resizer,
     resize_by_screen = resize_by_screen,
     resize_active_window = resize_active_window,
+    ws_action = ws_action,
     move_actions = move_actions,
 }

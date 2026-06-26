@@ -1,6 +1,12 @@
 local vars = require("variables")
 local fn = require("config.functions")
 
+for i = 1, 10 do
+    local key = i % 10
+    hl.bind(vars.kbGotoWs .. " + " .. key, fn.ws_action(false, "w", i))
+    hl.bind(vars.kbMoveWintoWs .. " + " .. key, fn.ws_action(true, "w", i))
+end
+
 hl.bind(vars.kbPrevWs, hl.dsp.focus({ workspace = "-1" }), { repeating = true })
 hl.bind(vars.kbNextWs, hl.dsp.focus({ workspace = "+1" }), { repeating = true })
 
