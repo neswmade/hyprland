@@ -8,6 +8,7 @@ hl.monitor({
 require("config.animations")
 require("config.rules")
 require("config.env")
+require("config.group")
 require("config.execs")
 require("config.general")
 require("config.input")
