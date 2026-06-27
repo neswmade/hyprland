@@ -21,6 +21,10 @@ git clone https://github.com/neswmade/hyprland.git ~/.config/hypr
  - trash-cli
  - qt5-wayland
  - qt6-wayland
+ - pipewire
+ - pipewire-pulse
+ - wireplumber
+ - xdg-desktop-portal-hyprland
 ### optional
  - nvidia drivers
 
