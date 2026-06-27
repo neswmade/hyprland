@@ -33,5 +33,5 @@ git clone https://github.com/neswmade/hyprland.git ~/.config/hypr
  - add prismlauncher rules
  - quickshell integration
  - groups
- - laptop audio/brightness
+ - brightness
  - plugins
