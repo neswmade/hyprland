@@ -54,8 +54,10 @@ local function resizer(title_pattern, width_pct, height_pct, actions, plain_matc
         for _, action in ipairs(action_list) do
             hl.dispatch(action)
         end
-        hl.dispatch(hl.dsp.window.resize(resize_by_screen(width_pct, height_pct)))
-        hl.dispatch(hl.dsp.window.set_prop({ prop = "keep_aspect_ratio", value = "true" }))
+        if width_pct > 0 and height_pct > 0 then
+            hl.dispatch(hl.dsp.window.resize(resize_by_screen(width_pct, height_pct)))
+            hl.dispatch(hl.dsp.window.set_prop({ prop = "keep_aspect_ratio", value = "true" }))
+        end
     end
 end
 
