@@ -1,6 +1,7 @@
 local vars = require("variables")
 local fn = require("config.functions")
 
+-- workspace
 for i = 1, 10 do
     local key = i % 10
     hl.bind(vars.kbGotoWs .. " + " .. key, fn.ws_action(false, "w", i))
@@ -12,6 +13,7 @@ hl.bind(vars.kbNextWs, hl.dsp.focus({ workspace = "+1" }), { repeating = true })
 
 hl.bind(vars.kbToggleSpecialWs, hl.dsp.workspace.toggle_special("special"))
 
+-- window
 hl.bind("CTRL + SUPER + SHIFT + left", hl.dsp.window.move({ workspace = "-1" }), { repeating = true })
 hl.bind("CTRL + SUPER + SHIFT + right", hl.dsp.window.move({ workspace = "+1" }), { repeating = true })
 
@@ -58,7 +60,9 @@ hl.bind(vars.kbWindowBorderedFullscreen, hl.dsp.window.fullscreen({ mode = "maxi
 hl.bind(vars.kbToggleWindowFloating, hl.dsp.window.float())
 hl.bind(vars.kbCloseWindow, hl.dsp.window.close())
 
+-- apps
 hl.bind(vars.kbTerminal, hl.dsp.exec_cmd("app2unit -- " .. vars.terminal))
 hl.bind(vars.kbBrowser, hl.dsp.exec_cmd("app2unit -- " .. vars.browser))
 
+-- misc
 hl.bind("SUPER + SHIFT + L", hl.dsp.exec_cmd(vars.suspendCommand), { locked = true })
