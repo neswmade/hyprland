@@ -5,6 +5,7 @@ hl.monitor({
     scale = 1,
 })
 
+require("config.animations")
 require("config.env")
 require("config.general")
 require("config.input")
