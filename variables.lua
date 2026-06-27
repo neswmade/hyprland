@@ -37,21 +37,29 @@ return {
 
     -- keybindings
     ---- workspace
-    kbMoveWintoWs = "SUPER + CTRL",
+    kbMoveWinInWs = "SUPER + CTRL",
     kbGotoWs = "SUPER",
     kbNextWs = "CTRL + SUPER + right",
     kbPrevWs = "CTRL + SUPER + left",
     kbToggleSpecialWs = "SUPER + S",
 
+    ---- ws groups
+    kbMoveWinInWsGroup = "SUPER + SHIFT + CTRL",
+    kbGoToWsGroup = "SUPER + SHIFT",
+    kbGroupNext = "ALT + tab",
+    kbGroupPrev = "CTRL + ALT + tab",
+    kbUngroup = "SUPER + U",
+    kbToggleGroup = "SUPER + comma",
+
     ---- window
-    kbMoveWindow = "SUPER + Z",
-    kbResizeWindow = "SUPER + X",
-    kbWindowPip = "SUPER + ALT + P",
-    kbPinWindow = "SUPER + P",
-    kbWindowFullscreen = "SUPER + F",
-    kbWindowBorderedFullscreen = "SUPER + ALT + F",
-    kbToggleWindowFloating = "SUPER + ALT + space",
-    kbCloseWindow = "SUPER + Q",
+    kbMoveWin = "SUPER + Z",
+    kbResizeWin = "SUPER + X",
+    kbWinPip = "SUPER + ALT + P",
+    kbPinWin = "SUPER + P",
+    kbWinFullscreen = "SUPER + F",
+    kbWinBorderedFullscreen = "SUPER + ALT + F",
+    kbToggleWinFloating = "SUPER + ALT + space",
+    kbCloseWin = "SUPER + Q",
 
     ---- apps
     kbTerminal = "SUPER + return",
