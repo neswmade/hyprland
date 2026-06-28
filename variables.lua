@@ -1,6 +1,6 @@
 return {
     terminal = "ghostty",
-    browser = "helium-browser",
+    browser = "zen-browser",
 
     -- input
     touchpadDisableTyping = false,
