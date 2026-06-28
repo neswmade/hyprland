@@ -19,6 +19,14 @@ hl.window_rule({
     },
     tag   = "+float",
 })
+hl.window_rule({
+    match = {
+        initial_title = ".*Browser$"
+    },
+    float = true,
+    center = true,
+    size = "(monitor_w*0.55) (monitor_h*0.70)"
+})
 hl.window_rule({ match = { class = "steam", title = "Friends List" }, tag = "+float" })
 -- TO-DO: prismlauncher
 
