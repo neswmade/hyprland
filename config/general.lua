@@ -8,6 +8,10 @@ hl.config({
         gaps_in = vars.windowGapsIn,
         gaps_out = vars.windowGapsOut,
         border_size = vars.windowBorderSize,
+        col = {
+            active_border = "rgba(a3a3a3bb)",
+            inactive_border = "rgba(404040aa)",
+        },
     },
 
     master = {

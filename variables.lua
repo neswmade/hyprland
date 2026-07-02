@@ -25,9 +25,13 @@ return {
     singleWindowGapsOut = 24,
 
     -- window
-    windowOpacity = 0.95,
-    windowRounding = 15,
+    windowOpacity = 1,
+    windowRounding = 12,
     windowBorderSize = 2,
+
+    -- shadow
+    shadowRange = 20,
+    shadowRenderPower = 3,
 
     -- misc
     volumeStep = 5,

@@ -66,7 +66,7 @@ hl.window_rule({
     idle_inhibit = "always",
 })
 
-hl.window_rule({ match = { class = "steam" }, rounding = 10 })
+hl.window_rule({ match = { class = "steam" }, rounding = vars.windowRounding })
 
 ---- pip
 hl.window_rule({
@@ -79,7 +79,7 @@ hl.window_rule({
 
 ---- misc
 hl.window_rule({ match = { class = "^(ueberzugpp_.*)$" }, float = true, no_initial_focus = true })
-hl.window_rule({ match = { xwayland = true, title = "win[0-9]+" }, no_dim = true, no_shadow = true, rounding = 10 })
+hl.window_rule({ match = { xwayland = true, title = "win[0-9]+" }, no_dim = true, no_shadow = true, rounding = vars.windowRounding })
 
 -- ws rules
 hl.workspace_rule({ workspace = "w[tv1]s[false]", gaps_out = vars.singleWindowGapsOut })
