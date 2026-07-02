@@ -15,5 +15,13 @@ hl.config({
             size = vars.blurSize,
             passes = vars.blurPasses,
         },
+        shadow = {
+            enabled = true,
+            range = vars.shadowRange,
+            render_power = vars.shadowRenderPower,
+            offset = "0 3",
+            color = "rgba(00000099)",
+            color_inactive = "rgba(00000044)",
+        },
     },
 })
